@@ -1,0 +1,17 @@
+ body: Container(
+        child: ListView(
+          children:arrData.map((value){
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(21),
+                    color: Colors.blue.shade100,
+                  ),
+                  child: Center(child:Text(value)),
+                ),
+            );
+          }).toList()
+        ),
+      ),
+    );
